@@ -1,0 +1,11 @@
+D:\Code\CheckRegularTime\CheckRegularTime\bin\Debug\netcoreapp2.1\CheckRegularTime.deps.json
+D:\Code\CheckRegularTime\CheckRegularTime\bin\Debug\netcoreapp2.1\CheckRegularTime.runtimeconfig.json
+D:\Code\CheckRegularTime\CheckRegularTime\bin\Debug\netcoreapp2.1\CheckRegularTime.runtimeconfig.dev.json
+D:\Code\CheckRegularTime\CheckRegularTime\bin\Debug\netcoreapp2.1\CheckRegularTime.dll
+D:\Code\CheckRegularTime\CheckRegularTime\bin\Debug\netcoreapp2.1\CheckRegularTime.pdb
+D:\Code\CheckRegularTime\CheckRegularTime\obj\Debug\netcoreapp2.1\CheckRegularTime.csprojAssemblyReference.cache
+D:\Code\CheckRegularTime\CheckRegularTime\obj\Debug\netcoreapp2.1\CheckRegularTime.csproj.CoreCompileInputs.cache
+D:\Code\CheckRegularTime\CheckRegularTime\obj\Debug\netcoreapp2.1\CheckRegularTime.AssemblyInfoInputs.cache
+D:\Code\CheckRegularTime\CheckRegularTime\obj\Debug\netcoreapp2.1\CheckRegularTime.AssemblyInfo.cs
+D:\Code\CheckRegularTime\CheckRegularTime\obj\Debug\netcoreapp2.1\CheckRegularTime.dll
+D:\Code\CheckRegularTime\CheckRegularTime\obj\Debug\netcoreapp2.1\CheckRegularTime.pdb
