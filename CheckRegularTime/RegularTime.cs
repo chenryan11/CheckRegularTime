@@ -8,7 +8,7 @@ namespace CheckRegularTime
     {
         public void MilitaryTimeToRegularTime()
         {
-            //DateTime datetime;
+            //DateTime datetime;   
 
             string[] m_slInPut = new string[1];
 
@@ -18,9 +18,12 @@ namespace CheckRegularTime
 
             string m_sAMorPM = "";
 
-            bool bWhile = true;
+            bool m_bWhile = true;
+
+            bool m_bHur = false , m_bMin = false;
+
             //判斷輸入
-            while (bWhile)
+            while (m_bWhile)
             {
                 m_sInPut = Console.ReadLine();
 
@@ -28,81 +31,91 @@ namespace CheckRegularTime
                 try
                 {
                     m_slInPut = m_sInPut.Split(':');
-                }
-                catch (Exception exp)
-                {
-                    Console.WriteLine(exp);
-                    Console.WriteLine("分割失敗");
-                    break;
-                }
-
-                if (m_slInPut != null) //m_lInPut不為空
-                {
-                    //小時
-                    if (int.TryParse(m_slInPut[0], out m_iInputHur))
+                    //m_lInPut不為空
+                    if (m_slInPut[0] != null &&
+                       m_slInPut[1] != null) 
                     {
-                        if (m_iInputHur <= 24 && m_iInputHur >= 0)
+                        //小時
+                        if (int.TryParse(m_slInPut[0], out m_iInputHur))
                         {
-                            if (m_iInputHur < 12 || m_iInputHur == 24)
+                            if (m_iInputHur <= 24 && m_iInputHur >= 0)
                             {
-                                m_sAMorPM = "AM";
-
-                                if (m_iInputHur == 24)
+                                if (m_iInputHur < 12 || m_iInputHur == 24)
                                 {
-                                    m_iInputHur = 00;
+                                    m_sAMorPM = "AM";
+
+                                    if (m_iInputHur == 24)
+                                    {
+                                        m_iInputHur = 00;                                       
+                                    }
+
+                                    m_bHur = true;
+                                }
+                                else
+                                {
+                                    m_sAMorPM = "PM";
+
+                                    if (m_iInputHur != 12)
+                                    {
+                                        m_iInputHur -= 12;
+                                    }
+
+                                    m_bHur = true;
                                 }
                             }
                             else
                             {
-                                m_sAMorPM = "PM";
-
-                                if(m_iInputHur != 12)
-                                {
-                                    m_iInputHur -= 12;
-                                }                                
+                                Console.WriteLine("小時輸入錯誤");
                             }
                         }
                         else
                         {
-                            Console.Write("error");
-                            break;
+                            Console.WriteLine("int.TryParse(m_slInPut[0])失敗");
                         }
-                    }
-                    else
-                    {
-                        Console.Write("int.TryParse(m_slInPut[0])失敗");
-                        break;
-                    }
-                    //分鐘
-                    if (int.TryParse(m_slInPut[1], out m_iInputMin))
-                    {
-                        if (m_iInputMin <= 60)
+                        //分鐘
+                        if (int.TryParse(m_slInPut[1], out m_iInputMin))
                         {
-                            //輸出
-                            Console.WriteLine(m_iInputHur + ":" + m_iInputMin + m_sAMorPM);
-                            break;
+                            if (m_iInputMin <= 60)
+                            {
+                                m_bMin = true;
+                            }
+                            else
+                            {
+                                Console.WriteLine("分鐘輸入錯誤");
+                                //break;
+                            }
                         }
                         else
                         {
-                            Console.Write("error");
-                            break;
+                            Console.WriteLine("int.TryParse(m_slInPut[1])失敗");
+                            //break;
                         }
                     }
                     else
                     {
-                        Console.Write("error");
+                        Console.WriteLine("m_lInPuth裡是空的");
+                        //break;
+                    }
+                    //全部輸入正確跳開迴圈，顯示結果
+                    if(m_bHur && m_bMin)
+                    {
                         break;
                     }
+                    else
+                    {
+                        m_bHur = false;
+                        m_bMin = false;
+                    }
+
                 }
-                else
+                catch (Exception)
                 {
-                    Console.WriteLine("m_lInPuth裡是空的");
-                    break;
+                    Console.WriteLine("error");
                 }
             }
 
             //輸出
-            //Console.WriteLine(m_iInputHur + ":" + m_iInputMin + m_sAMorPM);
+            Console.WriteLine(m_iInputHur + ":" + m_iInputMin + m_sAMorPM);
 
             /*
             if (DateTime.TryParse(m_sInPut, out datetime))
