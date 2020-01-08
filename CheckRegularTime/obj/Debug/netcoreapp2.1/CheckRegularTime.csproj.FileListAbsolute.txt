@@ -9,3 +9,13 @@ D:\Code\CheckRegularTime\CheckRegularTime\obj\Debug\netcoreapp2.1\CheckRegularTi
 D:\Code\CheckRegularTime\CheckRegularTime\obj\Debug\netcoreapp2.1\CheckRegularTime.AssemblyInfo.cs
 D:\Code\CheckRegularTime\CheckRegularTime\obj\Debug\netcoreapp2.1\CheckRegularTime.dll
 D:\Code\CheckRegularTime\CheckRegularTime\obj\Debug\netcoreapp2.1\CheckRegularTime.pdb
+D:\VisualStudio\CheckRegularTime\CheckRegularTime\bin\Debug\netcoreapp2.1\CheckRegularTime.deps.json
+D:\VisualStudio\CheckRegularTime\CheckRegularTime\bin\Debug\netcoreapp2.1\CheckRegularTime.runtimeconfig.json
+D:\VisualStudio\CheckRegularTime\CheckRegularTime\bin\Debug\netcoreapp2.1\CheckRegularTime.runtimeconfig.dev.json
+D:\VisualStudio\CheckRegularTime\CheckRegularTime\bin\Debug\netcoreapp2.1\CheckRegularTime.dll
+D:\VisualStudio\CheckRegularTime\CheckRegularTime\bin\Debug\netcoreapp2.1\CheckRegularTime.pdb
+D:\VisualStudio\CheckRegularTime\CheckRegularTime\obj\Debug\netcoreapp2.1\CheckRegularTime.csprojAssemblyReference.cache
+D:\VisualStudio\CheckRegularTime\CheckRegularTime\obj\Debug\netcoreapp2.1\CheckRegularTime.AssemblyInfoInputs.cache
+D:\VisualStudio\CheckRegularTime\CheckRegularTime\obj\Debug\netcoreapp2.1\CheckRegularTime.AssemblyInfo.cs
+D:\VisualStudio\CheckRegularTime\CheckRegularTime\obj\Debug\netcoreapp2.1\CheckRegularTime.dll
+D:\VisualStudio\CheckRegularTime\CheckRegularTime\obj\Debug\netcoreapp2.1\CheckRegularTime.pdb
